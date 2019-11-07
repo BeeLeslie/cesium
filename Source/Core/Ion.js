@@ -1,15 +1,9 @@
-define([
-        './Credit',
-        './defined',
-        './Resource'
-    ], function(
-        Credit,
-        defined,
-        Resource) {
-    'use strict';
+import Credit from './Credit.js';
+import defined from './defined.js';
+import Resource from './Resource.js';
 
     var defaultTokenCredit;
-    var defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJmM2QxOTgwYi05NWUwLTQ5YzAtOWQzNS01ZGUzY2U0MDJkYzciLCJpZCI6MjU5LCJzY29wZXMiOlsiYXNyIiwiZ2MiXSwiaWF0IjoxNTYxOTc2NzgwfQ.7_uNmrARhPNr9f3bn4FQAxF1JVVZ81sw2RypWivq5Zc';
+    var defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlYmY1OGY2NS1kODVmLTQxNTUtOWY5YS00ODE1Y2E1ZjFkZTQiLCJpZCI6MjU5LCJzY29wZXMiOlsiYXNyIiwiZ2MiXSwiaWF0IjoxNTcyNjI4NjQ5fQ.CYr8wbSJnOsWz4x2ufDHVe7CGvWzEWl4HzcOcceaNCE';
 
     /**
      * Default settings for accessing the Cesium ion API.
@@ -58,6 +52,4 @@ define([
 
         return defaultTokenCredit;
     };
-
-    return Ion;
-});
+export default Ion;
